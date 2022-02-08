@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.javaee7.sample</groupId>
     <artifactId>javaee7-simple-sample</artifactId>
-    <version>1.1.13-SNAPSHOT</version>
+    <version>0.0.14-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>javaee7-simple-sample</name>
     <properties>
@@ -32,7 +32,7 @@
     <distributionManagement>
    <repository>
       <id>nexus-releases</id>
-        <!--<name>Internal Releases</name> -->
+        <name>Internal Releases</name>
       <url>http://localhost:8081/repository/releases</url>
    </repository>
         <snapshotRepository>
@@ -115,6 +115,7 @@
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
                         <version>3.6.1</version>
+                        <extensions>true</extensions>
                         <!-- <artifactId>maven-javadoc-plugin</artifactId> -->
                         <executions>
                             <execution>
@@ -132,6 +133,7 @@
                         <configuration>
                   <serverId>nexus-releases</serverId>
                   <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
+                  <autoReleaseAfterClose>true</autoReleaseAfterClose>
                   <skipStaging>true</skipStaging>
                </configuration>
                     </plugin>
