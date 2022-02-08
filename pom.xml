@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.javaee7.sample</groupId>
     <artifactId>javaee7-simple-sample</artifactId>
-    <version>1.11-SNAPSHOT</version>
+    <version>1.12-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>javaee7-simple-sample</name>
     <properties>
@@ -62,14 +62,14 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>2.5.1</version>
+                    <version>3.6.1</version>
                     <configuration>
                         <tagNameFormat>v@{project.version}</tagNameFormat>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <!-- do not release profile from Maven super pom -->
                         <useReleaseProfile>false</useReleaseProfile>
                         <!--  instead use our own one called release, see below -->
-                        <releaseProfiles>release</releaseProfiles>
+                        <releaseProfiles>releases</releaseProfiles>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -107,7 +107,7 @@
     </build>
     <profiles>
         <profile>
-            <id>release</id>
+            <id>releases</id>
             <build>
                 <plugins>
                     <plugin>
