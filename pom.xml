@@ -68,7 +68,7 @@
                         <tagNameFormat>v@{project.version}</tagNameFormat>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <!-- do not release profile from Maven super pom -->
-                        <useReleaseProfile>false</useReleaseProfile>
+                       <!-- <useReleaseProfile>false</useReleaseProfile> -->
                         <!--  instead use our own one called release, see below -->
                         <releaseProfiles>releases</releaseProfiles>
                     </configuration>
@@ -124,9 +124,9 @@
                                 <goal>deploy</goal>
                                 </goals>
                                 <!-- <id>attach-javadocs</id> -->
-                                <goals>
+                               <!-- <goals>
                                     <goal>jar</goal>
-                                </goals>
+                                </goals> -->
                             </execution>
                         </executions>
                         <configuration>
