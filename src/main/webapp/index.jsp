@@ -6,9 +6,9 @@
         <title>Hello Java EE 7 Continuous Delivery!</title>
     </head>
     <body>
-        <h1>Example of Automated DevOps CI/CD</h1>
+        <h1>Example of Automated DevOps in windows CI/CD</h1>
         <h1>Code Commited:: GitLab -> Jenkins -> Maven -> Nexus</h1>
-        <h1>Build is Available:: Jenkins -> Deploy -> Nexus -> Tomcat7 </h1>
+        <h1>Build is Available:: Jenkins -> Deploy -> Nexus -> Tomcat8.5 </h1>
              <!--GET all the <a href="${pageContext.request.contextPath}/resources/persons"/>persons</a>.-->
     </body>
 </html>
